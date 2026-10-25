@@ -1,0 +1,46 @@
+{
+  "name": "grokbot-pet",
+  "version": "1.0.0",
+  "description": "A small floating desktop pet for Grok Bot (cosmetic companion + shortcut)",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.1.8"
+  },
+  "author": "Grok Bot Pet",
+  "build": {
+    "appId": "com.grokbotpet.app",
+    "productName": "Grok Bot Pet",
+    "files": [
+      "main.js",
+      "preload.js",
+      "renderer.js",
+      "index.html",
+      "ntfy.js",
+      "config.default.json",
+      "package.json"
+    ],
+    "artifactName": "${productName}-${arch}.${ext}",
+    "mac": {
+      "target": [
+        {
+          "target": "zip",
+          "arch": [
+            "arm64",
+            "x64"
+          ]
+        }
+      ],
+      "identity": null,
+      "icon": "build/icon.png",
+      "category": "public.app-category.utilities",
+      "extendInfo": {
+        "LSUIElement": true
+      }
+    }
+  }
+}
