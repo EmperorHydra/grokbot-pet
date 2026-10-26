@@ -21,6 +21,9 @@
       "renderer.js",
       "index.html",
       "ntfy.js",
+      "setup.html",
+      "setup.js",
+      "setup-preload.js",
       "config.default.json",
       "package.json"
     ],

@@ -1,1 +1,1 @@
-{ "topic": "", "server": "https://ntfy.sh", "sound": true, "clickUrl": "" }
+{ "topic": "", "server": "https://ntfy.sh", "sound": true, "clickUrl": "", "skipSetup": false }
